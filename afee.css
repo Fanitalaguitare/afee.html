@@ -1,0 +1,121 @@
+html {
+    font-size: 20px;
+}
+body {
+    padding: 0px;
+    background: linear-gradient(180deg, white, blue);
+    height: auto;
+}
+.img, .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 50px
+}
+nav {
+    margin-bottom: 30px;
+    background-image: url(puzzle-2784471_960_720.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.container-1 {
+    margin: 100px;
+    padding: 50px;
+    background: rgb(230, 141, 178);
+    position: relative;
+    top: 50px;
+    left: 10px;
+    width: 70%;
+    z-index: 1;
+}
+.container-2 {
+    padding: 50px;
+    background: rgb(195, 240, 107);
+    position: relative;
+    left: 400px;
+    top: -100px;
+    width: 60%;
+    z-index: 3;
+}
+.container-3 {
+    padding: 50px;
+    background: rgb(235, 19, 119);
+    position: relative;
+    left: 200px;
+    top: -130px ;
+    width: 50%;
+    z-index: 2;
+}
+.container-4 {
+    padding: 50px;
+    background: white;
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+.card {
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    left: 100px;
+    box-shadow: 10px 10px 10px;
+}
+.form-group {
+   box-shadow: 10px 10px 10px;
+   background: rgb(230, 141, 178);
+}
+iframe {
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+.h2 {
+    color: white;
+}
+@media screen and (max-width: 1000px) {
+    .img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .container-4 {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container-1, .container-2, .container-3  {
+        position: static;
+        margin: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .img-1 {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .card {
+        position: static;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .form-group {
+        margin-top: 950px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 750px) {
+    iframe {
+        position: absolute;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
