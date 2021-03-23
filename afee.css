@@ -68,6 +68,12 @@ nav {
    box-shadow: 10px 10px 10px;
    background: rgb(230, 141, 178);
 }
+.rules {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
 iframe {
     margin-left: 250px;
     margin-bottom: 50px;
