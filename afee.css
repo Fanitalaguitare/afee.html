@@ -6,13 +6,6 @@ body {
     background: linear-gradient(180deg, white, blue);
     height: auto;
 }
-.img, .video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 50px
-}
 nav {
     margin-bottom: 30px;
     background-image: url(puzzle-2784471_960_720.png);
@@ -21,7 +14,98 @@ nav {
     font-size: 30px;
     font-weight: bolder;
 }
+.rules {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    color:white;
+}
+.card {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    width: 350px;
+    box-shadow: 10px 10px 10px;
+    margin-left: 10px;
+}
+.form-group {
+   box-shadow: 10px 10px 10px;
+   background: rgb(230, 141, 178);
+   grid-column-start: 1;
+   grid-column-end: 13;
+   grid-row-start: 2;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   height: 400px;
+}
+.contact {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img {
+    width: 100%;
+}
 .container-1 {
+    background: rgb(230, 141, 178);
+    position: static;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.container-2 {
+    background: rgb(195, 240, 107);
+    position: static;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.container-3 {
+    background: rgb(231, 19, 119);
+    position: static;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.container-4 {
+    background: white;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.container-5 {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: 1fr 0.5fr 0.5fr;
+}
+.img-1 {
+    width: 80%;
+    height: 80%;
+}
+.video {
+    position: absolute;
+    margin-left: 0;
+    width: 100%;
+}
+@media screen and (min-width: 1050px) {
+    .img {
+        display: block;
+        margin-left: 220px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        width: 70%;
+    }
+    .container-1 {
     margin: 100px;
     padding: 50px;
     background: rgb(230, 141, 178);
@@ -30,98 +114,61 @@ nav {
     left: 10px;
     width: 70%;
     z-index: 1;
-}
-.container-2 {
-    padding: 50px;
-    background: rgb(195, 240, 107);
-    position: relative;
-    left: 400px;
-    top: -100px;
-    width: 60%;
-    z-index: 3;
-}
-.container-3 {
-    padding: 50px;
-    background: rgb(235, 19, 119);
-    position: relative;
-    left: 200px;
-    top: -130px ;
-    width: 50%;
-    z-index: 2;
-}
-.container-4 {
-    padding: 50px;
-    background: white;
-    margin-top: 100px;
-    width: 70%;
-    margin-left: 250px;
-    margin-bottom: 50px;
-}
-.card {
-    width: 400px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    left: 100px;
-    box-shadow: 10px 10px 10px;
-}
-.form-group {
-   box-shadow: 10px 10px 10px;
-   background: rgb(230, 141, 178);
-}
-.rules {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.5rem;
-    display: flex;
-    justify-content: center;
-}
-iframe {
-    margin-left: 250px;
-    margin-bottom: 50px;
-}
-.h2 {
-    color: white;
-}
-@media screen and (max-width: 1000px) {
-    .img {
-        width: 100%;
     }
-}
-@media screen and (max-width: 1100px) {
+    .container-2 {
+        padding: 50px;
+        position: relative;
+        left: 400px;
+        top: -100px;
+        width: 60%;
+        z-index: 3;
+    }
+    .container-3 {
+        padding: 50px;
+        position: relative;
+        left: 200px;
+        top: -130px;
+        width: 50%;
+        z-index: 2;
+    }
     .container-4 {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        padding: 50px;
+        margin-top: 100px;
+        width: 70%;
+        margin-left: 230px;
+        margin-bottom: 50px;
     }
-}
-@media screen and (max-width: 1050px) {
-    .container-1, .container-2, .container-3  {
-        position: static;
-        margin: 0;
-        width: 100%;
+    .container-5 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 0.5fr;
     }
-}
-@media screen and (max-width: 700px) {
-    .img-1 {
-        width: 120px;
+    .video {
+        display: block;
+        margin-bottom: 30px;  
     }
-}
-@media screen and (max-width: 1050px) {
     .card {
-        position: static;
-        width: 300px;
+        width: 400px;
+        margin-top: 100px;
+        margin-left: 100px;
+        grid-column-start: 1;
+        box-shadow: 10px 10px 10px;
     }
-}
-@media screen and (max-width: 1050px) {
     .form-group {
-        margin-top: 950px;
-        margin-bottom: 30px;
+       box-shadow: 10px 10px 10px;
+       background: rgb(230, 141, 178);
+       grid-column-start: 2;
+       grid-row-start: 1;
+       width: 50%;
+       margin-top:300px ;
     }
-}
-@media screen and (max-width: 750px) {
+    .contact {
+        margin-top: 100px;
+        grid-row-start: 2;
+    }
     iframe {
-        position: absolute;
-        margin-left: 0;
-        width: 100%;
+       margin-left: 450px;
+       margin-bottom: 50px;
+       grid-row-start: 2;
     }
 }
-
